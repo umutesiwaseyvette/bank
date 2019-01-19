@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=css/bootstrap.min.css>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="ccs/styles.css">
+    <title>BANK ACCOUNT</title>
+</head>
+<body>
+<div class="container1">
+    <div class="jumbtron">
+        <h1>Bank Account</h1>
+    </div>
+    <!-- well -->
+    <div class="well">
+        <h2>Create a new account</h2>  
+        <div class="row">
+            <div class="col-md-4">  
+                 <form id="new-contact">
+
+                        <div class="form-group">
+                            <label for="new-first-name">First Name</label>
+                            <input type="text" class="form-control" id="new-first-name">
+                        </div>
+
+                        <div class="form-group">
+                           <label for="new-last-name">Last Name</label>
+                           <input type="text" class="form-control" id="new-last-name">
+                        </div>
+
+                        <div class="form-group">
+                                <label for="new-IdNumber">Id Number</label>
+                                <input type="number" class="form-control" id="new-IdNumber">
+                         </div>
+
+                        <div class="form-group">
+                            <label for="new-city">Tel</label>
+                            <input type="number" class="form-control" id="new-City">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="new-initial-amount">Initial Amount</label>
+                            <input type="number" class="form-control" id="new-initial-amount">  
+                        </div>
+
+                         <button type="button" id="btn" class="btn btn-success">Create</button>
+                 </form>
+            </div>                      
+
+        </div>
+     </div>
+     <!-- close well -->
+</div> 
+<div class="container2">
+<div class="row">
+        <div class="col-md-4">
+            <p id ="regi"><strong>Client Details </strong></p>
+                    <label  id="name"> Client Name:</label><br>
+                    <label  id="initial"> Client Initial Amount:</label><br>
+                     <h1 class="title" id="operation"></h1>
+               <h2>Deposit or Withdraw Money:</h2>
+            <form id="form-balance" class="mod-form">
+                <div class="mod-div">
+                    <label for="input-deposit">Deposit Money: </label>
+                    <input id="input-deposit"type="number"min="0">
+                    <button type="submit" id="depos" class="btn btn-success">Confirm</button>
+                </div>
+                <form>
+                <div class="mod-div">
+                    <label for="input-withdraw">Withdraw Money: </label>
+                    <input id="input-withdraw"type="number"min="0">
+                    <button type="submit" id="withd" class="btn btn-success">Confirm</button>
+                </div>
+                </form>
+                <div class="mod-div">
+                    <button type="submit" id="submit" class="btn btn-success">Confirm</button>
+                </div>
+            </form>
+        </div>
+        </div>
+         </div>
+        <div id="account-info" class="row panel panel-info">
+             <div class="col-md-4"></div>
+                 <h2>Current Balance:</h2>
+                    <p><span class="output-balance"></span></p>
+            </div>
+        </div>
+
+        <script src=js/jquery.js></script>
+        <script src=js/bootstrap.min.js></script>
+        <script src="js/scripts.js"></script>   
+</body>
+</html>
